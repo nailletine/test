@@ -1,0 +1,10 @@
+angular.module('app')
+    .service('ApiService', function($http) {
+        return {
+
+            getMovie: function(id) {
+                return $http.get('https://api.themoviedb.org/3/movie/' + id +"?api_key=4b5769d9c114b4c008e50bc35c1d64f8");
+            }
+
+        };
+    });

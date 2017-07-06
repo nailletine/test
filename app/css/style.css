@@ -6,7 +6,7 @@
   margin-top: 2vw;
 
 }
-.space-icon{ 
+.space-icon{
   margin-top: 5vw; }
 
 
@@ -16,6 +16,7 @@
 
 .menu-left-screen-right{
   border: solid 2px orange;
+  padding-left: 0px!important; 
 }
 
 .menu-right-screen-right{
@@ -29,4 +30,14 @@ vertical-align: middle;
 
 .icon-menu-top{
   width: 2vw;
+}
+.icon-next{
+  width: 0.7vw;
+
+}
+.icon-book{
+  width: 2vw;
+}
+.orange-background{
+  background-color: #e77814;
 }

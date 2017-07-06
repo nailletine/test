@@ -6,32 +6,47 @@
                 <li><img src="./img/calendar_1.png" alt="calendar_1" class="icon-menu-left"></li>
                 <li><img src="./img/bookmark.png" alt="bookmark" class="icon-menu-left"></li>
                 <li><img src="./img/maintenance.png" alt="maintenance" class="icon-menu-left"></li>
-                <li><img src="./img/Location.png" alt="Location"class="icon-menu-left"></li>
-                <li><img src="./img/document.png" alt="document"class="icon-menu-left"></li>
-                <li><img src="./img/comments.png" alt="comments"class="icon-menu-left"></li>
-                <li><img src="./img/settings.png" alt="settings"class="icon-menu-left space-icon"></li>
+                <li><img src="./img/Location.png" alt="Location" class="icon-menu-left"></li>
+                <li><img src="./img/document.png" alt="document" class="icon-menu-left"></li>
+                <li><img src="./img/comments.png" alt="comments" class="icon-menu-left"></li>
+                <li><img src="./img/settings.png" alt="settings" class="icon-menu-left space-icon"></li>
 
             </ul>
 
         </div>
         <div class="col-xs-11 screen-right">
-          <div class="col-xs-3 menu-left-screen-right">
-            <div class="row">
-              <div class="col-xs-2">
-                <img class="icon-menu-top" src="./img/previous.png" alt="previous">
-              </div>
-              <div class="col-xs-8">
-                  <p> 6 Modes Opératoires</p>
-              </div>
-              <div class="col-xs-2">
-                  <img class="icon-menu-top" src="./img/search.png" alt="previous">
-              </div>
+            <div class="col-xs-3 menu-left-screen-right">
+                <div class="row orange-background">
+                    <div class="col-xs-2">
+                        <img class="icon-menu-top" src="./img/previous.png" alt="previous">
+                    </div>
+                    <div class="col-xs-8">
+                        <p> 6 Modes Opératoires</p>
+                    </div>
+                    <div class="col-xs-2">
+                        <img class="icon-menu-top" src="./img/search.png" alt="search">
+                    </div>
+                </div>
+
+
+                <div class="row" ng-repeat="collection in collections">
+                    <div class="col-xs-2">
+                        <img src="./img/literature-fonce.png" alt="literature foncé" class="icon-book">
+                    </div>
+                    <div class="col-xs-8">
+                        <p>{{collection.name}}</p>
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="./img/next.png" alt="next" class="icon-next">
+                    </div>
+                </div>
             </div>
 
-          </div>
-          <div class="col-xs-9 menu-right-screen-right">
 
-          </div>
+
+            <div class="col-xs-9 menu-right-screen-right">
+
+            </div>
 
 
         </div>
