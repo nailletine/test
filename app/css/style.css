@@ -1,0 +1,19 @@
+.menu-left{
+  border: solid 2px red;
+}
+
+.screen-right{
+  border: solid 2px blue;
+}
+
+.menu-left-screen-right{
+  border: solid 2px orange;
+}
+
+.menu-right-screen-right{
+  border: solid 2px yellow; 
+}
+
+li{
+list-style-type: none;
+}
