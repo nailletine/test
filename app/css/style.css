@@ -1,3 +1,7 @@
+.total{
+  display: flex;
+}
+
 .menu-left{
   border: solid 2px red;
 }
@@ -16,7 +20,7 @@
 
 .menu-left-screen-right{
   border: solid 2px orange;
-  padding-left: 0px!important; 
+  padding-left: 0px!important;
 }
 
 .menu-right-screen-right{
