@@ -1,6 +1,14 @@
 .menu-left{
   border: solid 2px red;
 }
+.icon-menu-left{
+  width: 3vw;
+  margin-top: 2vw;
+
+}
+.space-icon{ 
+  margin-top: 5vw; }
+
 
 .screen-right{
   border: solid 2px blue;
@@ -11,9 +19,14 @@
 }
 
 .menu-right-screen-right{
-  border: solid 2px yellow; 
+  border: solid 2px yellow;
 }
 
 li{
 list-style-type: none;
+vertical-align: middle;
+}
+
+.icon-menu-top{
+  width: 2vw;
 }
