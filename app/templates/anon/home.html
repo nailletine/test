@@ -31,14 +31,14 @@
                 </div>
 
 
-                <div ng-click="loadCollection(collection.id)" class="row" ng-repeat="collection in collections">
+                <div ng-click="loadCollection(collection.id)" class="row box-collection-total" ng-repeat="collection in collections">
                     <div class="col-xs-2">
                         <img src="./img/literature-fonce.png" alt="literature foncé" class="icon-book">
                     </div>
-                    <div class="col-xs-8">
-                        <p>{{collection.name}}</p>
+                    <div class="col-xs-8 box-collection">
+                        <p class="">{{collection.name}}</p>
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-xs-2 box-collection">
                         <img src="./img/next.png" alt="next" class="icon-next">
                     </div>
                 </div>
@@ -47,18 +47,22 @@
 
 
             <div class="col-xs-9 menu-right-screen-right">
+              <div class="overview">
+                <h1 class="overview-text">{{currentCollection.name}}</h1>
+                <p class="overview-text">{{currentCollection.overview}}</p>
+              </div>
                 <div class="col-xs-6">
                     <div ng-repeat="movie in currentCollection.parts">
                         <div ng-click="displayMovie(movie)">
-                            <div class="row">
+                            <div class="row repeat-movie">
                                 <div class="col-xs-2">
-                                    <h3>{{$index+1}}</h3>
+                                    <h5>{{$index+1}}</h5>
                                 </div>
-                                <div class="col-xs-8">
-                                    {{movie.original_title}}
+                                <div class="col-xs-8 align-txt">
+                                    <p class="align-text">{{movie.original_title}}</p>
                                 </div>
                                 <div class="col-xs-2">
-                                    <img src="./img/next.png" alt="next" class="icon-next">
+                                    <img src="./img/next.png" alt="next" class="icon-next align-text">
                                 </div>
                             </div>
                         </div>

@@ -6,12 +6,6 @@ angular.module('app')
                 data: {
                     access: AccessLevels.anon
                 },
-                views: {
-                    'navbar@': {
-                        templateUrl: 'anon/navbar.html',
-                        controller: 'NavbarController'
-                    }
-                }
             })
             .state('anon.home', {
                 url: '/',
@@ -44,12 +38,7 @@ angular.module('app')
             .state('user', {
                 abstract: true,
                 url: '/user',
-                views: {
-                    'navbar@': {
-                        templateUrl: 'user/navbar.html',
-                        controller: 'NavbarController'
-                    }
-                },
+                
                 data: {
                     access: AccessLevels.user
                 }
